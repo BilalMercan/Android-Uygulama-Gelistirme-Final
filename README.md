@@ -1,2 +1,4 @@
-# Android-Uygulama-Gelistirme-Final
-Android Final Projesi 
+# Android Final Projesi 
+## Persona App 
+### Uygulama personel bilgileri işlemlerini, not kaydı, bildirim gönderme, mediaplayer, kamera kullanımını ve hava durumu verilerini kullanıcıya sunar.  
+
