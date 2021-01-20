@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SoundNotification">
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="220dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="36dp"
+        android:max="100"
+        android:progress="0"
+        app:layout_constraintBottom_toTopOf="@+id/songname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/soundbuton"
+        android:layout_width="120dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/dsn2"
+        android:text="@string/soundply"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toTopOf="@+id/notifbuton"
+        app:layout_constraintEnd_toStartOf="@+id/soundstop"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/songname"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/songname"
+        android:layout_width="191dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="202dp"
+        android:textColor="#43A047"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.335"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar2" />
+
+    <Button
+        android:id="@+id/soundstop"
+        android:layout_width="120dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="68dp"
+        android:background="@drawable/dsn2"
+        android:text="@string/stop"
+        app:layout_constraintBottom_toTopOf="@+id/notifbuton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/soundbuton"
+        app:layout_constraintTop_toBottomOf="@+id/songname"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/notifbuton"
+        android:layout_width="120dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="159dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="276dp"
+        android:background="@drawable/dsn2"
+        android:text="@string/bildirim"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/notepad"
+        android:layout_width="120dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/dsn"
+        android:text="@string/not_saves"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/backcamera"
+        android:layout_width="120dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/dsn"
+        android:text="@string/kameragrid"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.a.BilalMercan">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/persona"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/persona"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PersonaApp">
+        <activity android:name=".personapicall"></activity>
+        <activity android:name=".personsqlcrud" />
+        <activity android:name=".Notepad" />
+        <activity android:name=".SoundNotification" />
+        <activity android:name=".CameraActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

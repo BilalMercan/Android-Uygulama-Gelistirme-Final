@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/spec"
+        android:layout_width="214dp"
+        android:layout_height="187dp"
+        android:layout_marginTop="84dp"
+        android:text="@string/maintextview"
+        android:textAlignment="center"
+        android:textColor="#0277BD"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="120dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="145dp"
+        android:layout_marginEnd="159dp"
+        android:layout_marginBottom="89dp"
+        android:background="@drawable/dsn"
+        android:text="@string/exitbtn"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kgv"
+        app:layout_constraintVertical_bias="0.032" />
+
+    <Button
+        android:id="@+id/kgv"
+        android:layout_width="174dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/dsn"
+        android:text="@string/kamera_kontrol"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spec" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

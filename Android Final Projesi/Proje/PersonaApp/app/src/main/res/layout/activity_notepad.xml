@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Notepad">
+
+    <EditText
+        android:id="@+id/notadi"
+        android:layout_width="204dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="94dp"
+        android:layout_marginTop="215dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginBottom="24dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/dosya_name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/not"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bilgilendirme"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/not"
+        android:layout_width="374dp"
+        android:layout_height="273dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="124dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/notes"
+        android:inputType="textMultiLine"
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/yenikayıt"
+        android:layout_width="120dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginBottom="128dp"
+        android:background="@drawable/dsn2"
+        android:text="@string/newnote"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/not"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bilgilendirme"
+        app:layout_constraintVertical_bias="0.518" />
+
+    <Button
+        android:id="@+id/kaydigetir"
+        android:layout_width="120dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="128dp"
+        android:background="@drawable/dsn2"
+        android:text="@string/callbacknote"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/not"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bilgilendirme" />
+
+    <TextView
+        android:id="@+id/bilgilendirme"
+        android:layout_width="170dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="107dp"
+        android:text="@string/description"
+        android:textAlignment="center"
+        android:textColor="#F9A825"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/not"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.039" />
+
+    <Button
+        android:id="@+id/Havadurum"
+        android:layout_width="120dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/dsn"
+        android:text="@string/hava_durumbtn"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/sesbildirim"
+        android:layout_width="120dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="45dp"
+        android:background="@drawable/dsn"
+        android:text="@string/ses_kontrolbtn"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
